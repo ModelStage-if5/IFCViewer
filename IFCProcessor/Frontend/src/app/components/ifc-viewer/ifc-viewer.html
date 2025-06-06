@@ -1,0 +1,55 @@
+<div class="ifc-viewer-container">
+  <!-- Hidden file input -->
+  <input 
+    #fileInput 
+    type="file" 
+    accept=".ifc" 
+    (change)="onFileSelected($event)"
+    style="display: none;">
+
+  <!-- Main viewer area -->
+  <div class="viewer-area" [class.drag-over]="isDragOver">
+    <canvas #canvas class="viewer-canvas"></canvas>
+    
+    <!-- Drag and drop overlay -->
+    <div class="drop-overlay" *ngIf="isDragOver">
+      <div class="drop-message">
+        <i class="drop-icon">📁</i>
+        <p>Drop IFC file here</p>
+      </div>
+    </div>
+
+    <!-- Loading overlay -->
+    <div class="loading-overlay" *ngIf="isLoading">
+      <div class="loading-content">
+        <div class="spinner"></div>
+        <p>{{ loadingMessage }}</p>
+      </div>
+    </div>
+
+    <!-- Upload button -->
+    <div class="upload-button" *ngIf="!isLoading">
+      <button (click)="triggerFileInput()" class="btn-upload">
+        📁 Select IFC File
+      </button>
+    </div>
+  </div>
+
+  <!-- Controls panel -->
+  <div class="controls-panel">
+    <h3>IFC Viewer Controls</h3>
+    <div class="control-group">
+      <p><strong>Mouse Controls:</strong></p>
+      <ul>
+        <li>Left click + drag: Rotate view</li>
+        <li>Mouse wheel: Zoom in/out</li>
+      </ul>
+    </div>
+    <div class="control-group">
+      <p><strong>File Operations:</strong></p>
+      <button (click)="triggerFileInput()" class="btn-secondary">
+        📁 Load New File
+      </button>
+    </div>
+  </div>
+</div>

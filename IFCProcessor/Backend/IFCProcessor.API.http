@@ -1,0 +1,6 @@
+@IFCProcessor.API_HostAddress = http://localhost:5208
+
+GET {{IFCProcessor.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

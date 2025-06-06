@@ -1,0 +1,125 @@
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues.
+    
+❯ Building...
+✔ Building...
+Application bundle generation failed. [1.895 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mTS-998113: RouterOutlet is not used within the template of App[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.ts:7:12:
+[37m      7 │   imports: [[32mRouterOutlet[37m, IfcViewerComponent],
+        ╵             [32m~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS4111: Property 'isIFCGeometry' comes from an index signature, so it must be accessed with ['isIFCGeometry'].[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/ifc-viewer/ifc-viewer.ts:212:21:
+[37m      212 │       child.userData.[32misIFCGeometry[37m
+          ╵                      [32m~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS4111: Property 'isIFCGeometry' comes from an index signature, so it must be accessed with ['isIFCGeometry'].[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/ifc-viewer/ifc-viewer.ts:227:26:
+[37m      227 │             mesh.userData.[32misIFCGeometry[37m = true;
+          ╵                           [32m~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS4111: Property 'isIFCGeometry' comes from an index signature, so it must be accessed with ['isIFCGeometry'].[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/ifc-viewer/ifc-viewer.ts:283:25:
+[37m      283 │       if (child.userData.[32misIFCGeometry[37m) {
+          ╵                          [32m~~~~~~~~~~~~~[0m
+
+
+Watch mode enabled. Watching for file changes...
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.255 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mTS-998113: RouterOutlet is not used within the template of App[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.ts:7:12:
+[37m      7 │   imports: [[32mRouterOutlet[37m, IfcViewerComponent],
+        ╵             [32m~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS4111: Property 'isIFCGeometry' comes from an index signature, so it must be accessed with ['isIFCGeometry'].[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/ifc-viewer/ifc-viewer.ts:212:21:
+[37m      212 │       child.userData.[32misIFCGeometry[37m
+          ╵                      [32m~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS4111: Property 'isIFCGeometry' comes from an index signature, so it must be accessed with ['isIFCGeometry'].[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/ifc-viewer/ifc-viewer.ts:227:26:
+[37m      227 │             mesh.userData.[32misIFCGeometry[37m = true;
+          ╵                           [32m~~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.220 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mTS-998113: RouterOutlet is not used within the template of App[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.ts:7:12:
+[37m      7 │   imports: [[32mRouterOutlet[37m, IfcViewerComponent],
+        ╵             [32m~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS4111: Property 'isIFCGeometry' comes from an index signature, so it must be accessed with ['isIFCGeometry'].[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/ifc-viewer/ifc-viewer.ts:212:21:
+[37m      212 │       child.userData.[32misIFCGeometry[37m
+          ╵                      [32m~~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names         | Raw size
+main.js             | main          | 28.69 kB | 
+styles.css          | styles        | 96 bytes | 
+polyfills.js        | polyfills     | 95 bytes | 
+
+                    | Initial total | 28.88 kB
+
+Application bundle generation complete. [0.190 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mTS-998113: RouterOutlet is not used within the template of App[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.ts:7:12:
+[37m      7 │   imports: [[32mRouterOutlet[37m, IfcViewerComponent],
+        ╵             [32m~~~~~~~~~~~~[0m
+
+
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:54829/
+  ➜  Network: http://172.17.0.3:54829/
+  ➜  press h + enter to show help
+
+  #  Node.js[905]: void node::ResetStdio() at ../src/node.cc:766
+  #  Assertion failed: !(err != 0) || (err == -1 && (*__errno_location ()) == 1)
+
+----- Native stack trace -----
+
+ 1: 0xf6ea57 node::Assert(node::AssertionInfo const&) [ng serve --host 0.0.0.0 --port 54829 --allowed-hosts]
+ 2: 0xf13e24  [ng serve --host 0.0.0.0 --port 54829 --allowed-hosts]
+ 3: 0x75b10fb8255d  [/lib/x86_64-linux-gnu/libc.so.6]
+ 4: 0x75b10fb8269a  [/lib/x86_64-linux-gnu/libc.so.6]
+ 5: 0xe6539f node::DefaultProcessExitHandlerInternal(node::Environment*, node::ExitCode) [ng serve --host 0.0.0.0 --port 54829 --allowed-hosts]
+ 6: 0xed1daf node::Environment::Exit(node::ExitCode) [ng serve --host 0.0.0.0 --port 54829 --allowed-hosts]
+ 7: 0x75b107e0f5e2 
+
+  #  Node.js[905]: void node::ResetStdio() at ../src/node.cc:766
+  #  Assertion failed: !(err != 0) || (err == -1 && (*__errno_location ()) == 1)
+
+----- Native stack trace -----
+
